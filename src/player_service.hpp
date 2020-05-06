@@ -9,6 +9,7 @@ public:
 
   Card * PlayTopCard();
   void AddWinningCards(std::vector<Card *> *cards);
+  bool HasCards();
 private:
   Player *m_player;
 };    

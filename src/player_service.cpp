@@ -23,3 +23,10 @@ void PlayerService::AddWinningCards(std::vector<Card *> *cards)
     this->m_player->cards->push_back(card);
   }
 }
+
+bool PlayerService::HasCards()
+{
+  //empty returns true if there are no elements,
+  //then we negate that to satisfy the method
+  return !this->m_player->cards->empty();
+}

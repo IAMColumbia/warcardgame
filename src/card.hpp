@@ -4,8 +4,9 @@
 #include <string>
 struct Card
 {
-  Card(std::string suite, std::string rank);
+  Card(std::string suite, std::string rank, int rank_order);
   std::string suite;
   std::string rank;
+  int rank_order;
 };
 #endif
